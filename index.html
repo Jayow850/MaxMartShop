@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxMart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MaxMart</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>New Arrivals</h2>
+                <p>Explore our latest collection</p>
+                <a href="product.html" class="btn">Shop Now</a>
+            </div>
+        </section>
+        <section class="product-grid">
+            <!-- Sample Product Card -->
+            <div class="product-card">
+                <img src="https://i.pinimg.com/236x/78/ef/9d/78ef9d459126fa10c1091dbcbf89d249.jpg" alt="Shirt Men Brand Trend Comfortable Top Clothes" width="200" height="200">
+                <h3>Shirt Men Brand Trend Comfortable Top Clothes</h3>
+                <p>$29.99</p>
+                <a href="https://i.pinimg.com/236x/78/ef/9d/78ef9d459126fa10c1091dbcbf89d249.jpg" class="btn">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/236x/ed/ba/2c/edba2ca48e35a0aa0c09990841bc66ef.jpg" alt="Mens Green Long Sleeve Drawstring Hoodies" width="200" height="200">
+                <h4>Mens Green Long Sleeve Drawstring Hoodies</h4>
+                <p>$39.99</p>
+                <a href="https://i.pinimg.com/236x/ed/ba/2c/edba2ca48e35a0aa0c09990841bc66ef.jpg" class="btn">View Details</a>
+            </div>
+            <!-- Add more product cards as needed -->
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MaxMart. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+          .then(() => console.log('Service Worker Registered'));
+        }
+      </script>
+      
+</body>
+</html>
