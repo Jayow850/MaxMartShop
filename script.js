@@ -71,6 +71,32 @@ function updateCartDisplay() {
     // Update total price
     cartTotal.innerHTML = `Total: $${total.toFixed(2)}`;
 }
+// Assume this function is called when a user adds a product to the cart
+function addProductToCart(productName, price, imageUrl) {
+    const cart = document.querySelector('.cart-items');
+    
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    
+    const img = document.createElement('img');
+    img.src = imageUrl;
+    img.alt = productName;
+    img.width = 100; // Width as per your CSS
+    img.height = 'auto'; // Height will adjust proportionally
+    
+    const productNameElement = document.createElement('p');
+    productNameElement.textContent = productName;
+    
+    const priceElement = document.createElement('p');
+    priceElement.textContent = '$' + price;
+    
+    cartItem.appendChild(img);
+    cartItem.appendChild(productNameElement);
+    cartItem.appendChild(priceElement);
+    
+    cart.appendChild(cartItem);
+}
+
 
 // Initial cart display update
 document.addEventListener('DOMContentLoaded', updateCartDisplay);

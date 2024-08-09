@@ -41,16 +41,45 @@
             <div class="product-card">
                 <button onclick="addToCart('Mens Knitted Rib Pullover Golf Polo ShirtJ Green-L', 'Mens Knitted Rib Pullover Golf Polo ShirtJ Green-L', 29.99)">Add to Cart</button>
                 <img src="https://i.pinimg.com/564x/49/c0/bc/49c0bcd4e84b1f32afff9a48b7dbd7b3.jpg" alt="Mens Knitted Rib Pullover Golf Polo ShirtJ Green-L" width="200" height="200">
-                <h3>Mens Knitted Rib Pullover Golf Polo ShirtJ Green-L</h3>
+                <h5>Mens Knitted Rib Pullover Golf Polo ShirtJ Green-L</h5>
                 <p>$29.99</p>
                 <a href="https://i.pinimg.com/236x/49/c0/bc/49c0bcd4e84b1f32afff9a48b7dbd7b3.jpg" class="btn">View Details</a>
             </div>
             <div class="product-card">
                 <button onclick="addToCart('Beach Surfing European And American Foreign Trade 3D Digital Geometry Hawaii Printing Men Short Sleeve - Style1, 4XL', 'Beach Surfing European And American Foreign Trade 3D Digital Geometry Hawaii Printing Men Short Sleeve - Style1, 4XL', 29.99)">Add to Cart</button>
                 <img src="https://i.pinimg.com/236x/3e/76/a3/3e76a3cf44d22c8a31fefdacda506cd6.jpg" alt="Beach Surfing European And American Foreign Trade 3D Digital Geometry Hawaii Printing Men Short Sleeve - Style1, 4XL" width="200" height="200">
-                <h4>Beach Surfing European And American Foreign Trade 3D Digital Geometry Hawaii Printing Men Short Sleeve - Style1, 4XL</h4>
+                <h6>Beach Surfing European And American Foreign Trade 3D Digital Geometry Hawaii Printing Men Short Sleeve - Style1, 4XL</h6>
                 <p>$59.99</p>
                 <a href="https://i.pinimg.com/236x/3e/76/a3/3e76a3cf44d22c8a31fefdacda506cd6.jpg" class="btn">View Details </a>
+            </div>
+            <div class="product-card">
+                <button onclick="addToCart('Mens Green Long Sleeve Drawstring Hoodies', 'Mens Green Long Sleeve Drawstring Hoodies', 39.99)">Add to Cart</button>
+                <img src="https://i.pinimg.com/564x/6d/52/ac/6d52acb39d3293809f9e31b802e4bfef.jpg" alt="Mens Oversized Extended Neck Heavyweight T-Shirt - Brown - Xl" width="200" height="200" >
+                <h7>Mens Oversized Extended Neck Heavyweight T-Shirt - Brown - Xl</h7>
+                <p>$34.99</p>
+                <a href="https://i.pinimg.com/564x/6d/52/ac/6d52acb39d3293809f9e31b802e4bfef.jpg" class="btn">View Details <p>Men Oversized Extended Neck Heavyweight T-shirt - Brown - XL - Oversized Extended Neck Heavyweight T-shirt</p></a>
+            </div>
+            
+            <div class="product-card">
+                <button onclick="addToCart('Black Casual Collar Half Sleeve Fabric Plain Embellished Slight Stretch Summer Men Clothing', 'Black Casual Collar Half Sleeve Fabric Plain Embellished Slight Stretch Summer Men Clothing', 50)">Add to Cart</button>
+                <img src="https://images.pexels.com/photos/9558233/pexels-photo-9558233.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Black Casual Collar Half Sleeve Fabric Plain Embellished Slight Stretch Summer Men Clothing" width="200" height="200">
+                <h8>Black Casual Collar Half Sleeve Fabric Plain Embellished Slight Stretch Summer Men Clothing</h8>
+                <p>$50</p>
+                <a href="https://images.pexels.com/photos/9558233/pexels-photo-9558233.jpeg?auto=compress&cs=tinysrgb&w=600" class="btn">View Details</a>
+            </div>
+            <div class="product-card">
+                <button onclick="addToCart('Mens Green Long Sleeve Drawstring Hoodies', 'Mens Green Long Sleeve Drawstring Hoodies', 39.99)">Add to Cart</button>
+                <img src="https://images.pexels.com/photos/9558601/pexels-photo-9558601.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mens Green Long Sleeve Drawstring Hoodies" width="200" height="200">
+                <h9>Mens Green Long Sleeve Drawstring Hoodies</h9>
+                <p>$39.99</p>
+                <a href="https://images.pexels.com/photos/9558601/pexels-photo-9558601.jpeg?auto=compress&cs=tinysrgb&w=600" class="btn">View Details</a>
+            </div>
+            <div class="product-card">
+                <button onclick="addToCart('Mens Green Long Sleeve Drawstring Hoodies', 'Mens Green Long Sleeve Drawstring Hoodies', 39.99)">Add to Cart</button>
+                <img src="https://images.pexels.com/photos/26316180/pexels-photo-26316180/free-photo-of-woman-holding-brown-leather-bag.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mens Green Long Sleeve Drawstring Hoodies" width="200" height="200">
+                <h10>Mens Green Long Sleeve Drawstring Hoodies</h10>
+                <p>$39.99</p>
+                <a href="https://images.pexels.com/photos/26316180/pexels-photo-26316180/free-photo-of-woman-holding-brown-leather-bag.jpeg?auto=compress&cs=tinysrgb&w=600" class="btn">View Details</a>
             </div>
             <!-- Add more product cards as needed -->
         </section>
@@ -61,5 +90,12 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+          .then(() => console.log('Service Worker Registered'));
+        }
+      </script>
+      
 </body>
 </html>
