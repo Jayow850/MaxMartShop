@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link your CSS file -->
+</head>
+<body>
+    <h2>Checkout</h2>
+    <p>Total: $<span id="total-price-checkout">0.00</span></p>
+
+    <h3>Select Payment Method:</h3>
+    <form>
+        <label>
+            <input type="radio" name="payment-method" value="visa"> Visa
+        </label><br>
+        <label>
+            <input type="radio" name="payment-method" value="paypal"> PayPal
+        </label><br><br>
+
+        <button type="submit">Proceed to Payment</button>
+    </form>
+
+    <script>
+        // Load the total price from the previous page
+        const totalPrice = localStorage.getItem('totalPrice') || '0.00';
+        document.getElementById('total-price-checkout').textContent = totalPrice;
+    </script>
+</body>
+</html>
